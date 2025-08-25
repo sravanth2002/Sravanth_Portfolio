@@ -606,6 +606,19 @@ img {
   outline: none;
 }
 
+
+/* Recognition section */
+.recognition-photo {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.recognition-photo:hover {
+    box-shadow: 0 0 0 4px #6c63ff33;
+    transform: scale(1.05);
+}
+.recognition-desc-box .card {
+    min-width: 220px;
+}
+
 /* Contact section */
 .contact-container {
   row-gap: 3rem;

@@ -9,14 +9,17 @@
     <meta name="author" content="JuditKaramazov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="QabE4pgOKR5rQ45trqzVGARIOV6c3OB0FW_ZBUJtQqQ" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
     <link rel="manifest" href="assets/favicon//site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-    <title>Maria Brió Pérez | Portfolio</title>
+    <title>Pulipaka Sravanth | Portfolio</title>
 </head>
 
 <body>
@@ -27,45 +30,58 @@
 
             <!-- Navigation -->
             <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list grid">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active-link">
-                            <i class="fas fa-home nav-link-icon"></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">
-                            <i class="fas fa-user nav-link-icon"></i> About
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills" class="nav-link">
-                            <i class="fas fa-tools nav-link-icon"></i> Skills
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">
-                            <i class="fas fa-suitcase nav-link-icon"></i> Experience
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#articles" class="nav-link">
-                            <i class="fas fa-file-alt nav-link-icon"></i> Certifications
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">
-                            <i class="fas fa-file-alt nav-link-icon"></i> Projects
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            <i class="fas fa-envelope nav-link-icon"></i> Contact
-                        </a>
-                    </li>
-                </ul>
-                <i class="fas fa-times nav-close" id="nav-close"></i>
-            </div>
+            <ul class="nav-list grid">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">
+                        <i class="fas fa-home nav-link-icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user nav-link-icon"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-tools nav-link-icon"></i> Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">
+                        <i class="fas fa-suitcase nav-link-icon"></i> Experience
+                    </a>
+                </li>
+                <!-- Awards Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="awardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-trophy nav-link-icon"></i> Awards
+                    </a>
+                    <ul class="dropdown-menu animate__animated animate__fadeInDown" aria-labelledby="awardsDropdown" style="--animate-duration: 0.5s;">
+                        <li>
+                            <a class="dropdown-item" href="#projects">
+                                <i class="fas fa-project-diagram nav-link-icon"></i> Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#articles">
+                                <i class="fas fa-file-alt nav-link-icon"></i> Certifications
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#recognition">
+                                <i class="fas fa-file-alt nav-link-icon"></i> Recognitions
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope nav-link-icon"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <i class="fas fa-times nav-close" id="nav-close"></i>
+        </div>
             <div class="nav-btns">
 
                 <!-- Theme toggler -->
@@ -92,7 +108,7 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                         <a href="https://github.com/sravanth2002" target="_blank" class="home-social-icon">
-                            <i class="fas fa-flask"></i>
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
                     <div class="home-img">
@@ -452,6 +468,58 @@ building, and optimizing scalable solutions.</p>
         </section>
 
         <!-- Articles section -->
+        <section class="articles section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="articles-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Articles section: first element -->
+                    <div class="articles-content grid swiper-slide">
+                        <h3 class="articles-title">Cloud Data Ingestion Pipeline for Analytics</h3>
+                        <div class="articles-data">
+                        <li>Designed ETL workflows to extract, transform, and load structured data into Solr for analytics.</li>
+                        <li>Created NiFi flows to pull data from PostgreSQL, transform JSON, and push into Solr.</li>
+                        <li>Improved query performance by ~25% through optimized indexing.</li>
+                        </div>
+
+                        
+                    </div>
+                    <!-- Articles section: second element -->
+                    <div class="articles-content grid swiper-slide">
+                        <h3 class="articles-title">AWS Resources Cost Optimizer</h3>
+                        <div class="articles-data">
+                        <li>Automated framework to detect underutilized resources and take cost-saving actions.</li>
+                        <li>Scheduled via EventBridge; alerting and reporting by email.</li>
+                        <li>Demonstrated up to ~30% cost reduction on test workloads.</li>
+                        </div>
+                    </div>
+                    <!-- Articles section: third element -->
+                    <div class="articles-content grid swiper-slide">
+                        <h3 class="articles-title">CI/CD Automation & Security Integration</h3>
+                        <div class="articles-data">
+                        <li>Automated build & deployment pipelines with integrated code quality and security scans.</li>
+                        <li>Reduced manual QA effort by ~40% with reliable pipelines.</li>
+                        </div>
+                    </div>
+                    <div class="articles-content grid swiper-slide">
+                        <h3 class="articles-title">Driver Drowsiness Detection (Major Project)</h3>
+                        <div class="articles-data">
+                        <li>Trained models to detect driver drowsiness and triggered alerts via buzzer.</li>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-angle-right swiper-articles-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-angle-left swiper-articles-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
         <section class="articles section" id="articles">
             <h2 class="section-title">Certifications</h2>
 
@@ -520,56 +588,83 @@ building, and optimizing scalable solutions.</p>
         </section>
 
         
-        <section class="articles section" id="projects">
-            <h2 class="section-title">Projects</h2>
+        
+        
 
-            <div class="articles-container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Articles section: first element -->
-                    <div class="articles-content grid swiper-slide">
-                        <h3 class="articles-title">Cloud Data Ingestion Pipeline for Analytics</h3>
-                        <div class="articles-data">
-                        <li>Designed ETL workflows to extract, transform, and load structured data into Solr for analytics.</li>
-                        <li>Created NiFi flows to pull data from PostgreSQL, transform JSON, and push into Solr.</li>
-                        <li>Improved query performance by ~25% through optimized indexing.</li>
-                        </div>
 
-                        
+        <section class="recognition section" id="recognition">
+            <h2 class="section-title">Recognitions</h2>
+            <span class="section-subtitle">Awards & Achievements</span>
+            <div class="container">
+                <!-- Recognition 1 -->
+                 <div class="row align-items-center mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="img/experian_2.png" alt="Recognition 5" class="img-fluid rounded-circle shadow recognition-photo" style="width: 140px; height: 140px; object-fit: cover; cursor:pointer;" data-bs-toggle="collapse" data-bs-target="#recognition5-desc" aria-expanded="false" aria-controls="recognition5-desc">
                     </div>
-                    <!-- Articles section: second element -->
-                    <div class="articles-content grid swiper-slide">
-                        <h3 class="articles-title">AWS Resources Cost Optimizer</h3>
-                        <div class="articles-data">
-                        <li>Automated framework to detect underutilized resources and take cost-saving actions.</li>
-                        <li>Scheduled via EventBridge; alerting and reporting by email.</li>
-                        <li>Demonstrated up to ~30% cost reduction on test workloads.</li>
-                        </div>
-                    </div>
-                    <!-- Articles section: third element -->
-                    <div class="articles-content grid swiper-slide">
-                        <h3 class="articles-title">CI/CD Automation & Security Integration</h3>
-                        <div class="articles-data">
-                        <li>Automated build & deployment pipelines with integrated code quality and security scans.</li>
-                        <li>Reduced manual QA effort by ~40% with reliable pipelines.</li>
-                        </div>
-                    </div>
-                    <div class="articles-content grid swiper-slide">
-                        <h3 class="articles-title">Driver Drowsiness Detection (Major Project)</h3>
-                        <div class="articles-data">
-                        <li>Trained models to detect driver drowsiness and triggered alerts via buzzer.</li>
+                    <div class="col-md-8">
+                        <div class=" recognition-desc-box" id="recognition5-desc">
+                            <div class="card card-body border-0 shadow-sm animate__animated animate__fadeInRight" style="background: linear-gradient(90deg, #f9fafb 60%, #fcd34d 100%);">
+                                <h4 class="mb-2" style="color:#f59e42;">Certificate</h4>
+                                <div class="d-flex justify-content-center align-items-center" style="min-height:250px;">
+                                    <img src="img/Experian_recogntion.jpeg" class="img-fluid shadow recognition-photo" style="height: 250px; width: auto; object-fit: cover;">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next">
-                    <i class="fas fa-angle-right swiper-articles-icon"></i>
+                <!-- Recognition 2 -->
+                <div class="row align-items-center mb-5 flex-row-reverse">
+                    <div class="col-md-4 text-center">
+                        <img src="img/Joe_photo.png" alt="Recognition 1" class="img-fluid rounded-circle shadow recognition-photo" style="width: 140px; height: 140px; object-fit: cover; cursor:pointer;" data-bs-toggle="collapse" data-bs-target="#recognition1-desc" aria-expanded="false" aria-controls="recognition1-desc">
+                    </div>
+                    <div class="col-md-8">
+                        <div class=" recognition-desc-box" id="recognition1-desc">
+                            <div class="card card-body border-0 shadow-sm animate__animated animate__fadeInRight" style="background: linear-gradient(90deg, #e0e7ff 60%, #fff 100%);">
+                                <h4 class="mb-2" style="color:#4f46e5;"><u>Sturge Joe</u>: Product Owner</h4>
+                                <p class="mb-1" style="text-align: justify; text-justify: inter-word;">Thanks for all your great contributions this year. 
+                                    Your work on the deduplication flow for the service was instrumental, helping us identify and merge over 100,000 duplicates and improving data quality in the Database. 
+                                    I also appreciate your dedication in working during odd hours to ensure key milestones were met. 
+                                    Your research and POC on the Service was another great success—thanks for driving these forward!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-button-prev">
-                    <i class="fas fa-angle-left swiper-articles-icon"></i>
+                <!-- Recognition 3 -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-4 text-center">
+                        <img src="img/JAYESH_PHOTO.png" alt="Recognition 2" class="img-fluid rounded-circle shadow recognition-photo" style="width: 140px; height: 140px; object-fit: cover; cursor:pointer;" data-bs-toggle="collapse" data-bs-target="#recognition2-desc" aria-expanded="false" aria-controls="recognition2-desc">
+                    </div>
+                    <div class="col-md-8 text-end">
+                        <div class="recognition-desc-box" id="recognition2-desc">
+                            <div class="card card-body border-0 shadow-sm animate__animated animate__fadeInLeft" style="background: linear-gradient(270deg, #f0fdfa 60%, #fff 100%);">
+                                <h4 class="mb-2" style="color:#059669;"><u>Shende Jayesh</u>: Manager</h4>
+                                <p class="mb-1" style="text-align: justify; text-justify: inter-word;">You are an exceptionally talented developer and a highly valued member of the team.
+                                     I’ve seen your collaborative spirit and the way you embrace new challenges, especially on complex proof-of-concept projects. 
+                                     Your proactive learning in data engineering and expertise in cloud technologies are real strengths.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <!-- Recognition 4 -->
+                <div class="row align-items-center mb-5 flex-row-reverse">
+                    <div class="col-md-4 text-center">
+                        <img src="img/Venkat_photo.png" alt="Recognition 4" class="img-fluid rounded-circle shadow recognition-photo" style="width: 140px; height: 140px; object-fit: cover; cursor:pointer;" data-bs-toggle="collapse" data-bs-target="#recognition4-desc" aria-expanded="false" aria-controls="recognition4-desc">
+                    </div>
+                    <div class="col-md-8 text-end">
+                        <div class=" recognition-desc-box" id="recognition4-desc">
+                            <div class="card card-body border-0 shadow-sm animate__animated animate__fadeInLeft" style="background: linear-gradient(270deg, #fce7f3 60%, #fff 100%);">
+                                <h4 class="mb-2" style="color:#be185d;"><u>Venkatarao Vallapaneni</u>: Staff Engineer(my mentor)</h4>
+                                <p class="mb-1" style="text-align: justify; text-justify: inter-word;">I want to acknowledge the fantastic work you’ve been doing, especially the Proof Of Concepts as part of the Solr search engine and the ownership you’ve taken for the service you built in AWS.
+                                    Your efforts are valuable to the team, and I see great potential in you to grow further.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
-        
+
 
 
 
@@ -629,22 +724,19 @@ building, and optimizing scalable solutions.</p>
                         <a href="#projects" class="footer-link">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer-link">Contact Me</a>
+                        <a href="#contact" class="footer-link">Contact</a>
                     </li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="https://www.linkedin.com/in/mariabrioperez/" target="_blank">
+                    <a href="https://www.linkedin.com/in/pulipaka-sravanth-02a3091b4" target="_blank">
                         <i class="fab fa-linkedin-in footer-social"></i>
                     </a>
-                    <a href="https://www.instagram.com/maria.bpz" target="_blank">
+                    <a href="https://www.instagram.com/sravanth__p/" target="_blank">
                         <i class="fab fa-instagram footer-social"></i>
-                    </a>
-                    <a href="assets/mariabrioperez.vcf" target="_blank">
-                        <i class="fas fa-address-card footer-social"></i>
                     </a>
                 </div>
             </div>
-            <p class="footer-copy">&#169; Judit Karamazov. All rights reserved.</p>
+            <p class="footer-copy">&#169; Pulipaka Sravanth. All rights reserved</p>
         </div>
     </footer>
 
